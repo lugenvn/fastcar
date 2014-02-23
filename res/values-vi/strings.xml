@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FastCar</string>
+    <string name="action_settings">Settings</string>
+	<string name="infor_text">Thông tin lộ trình</string>
+	<string name="from">Từ :</string>
+	<string name="to">Đến :</string>
+	<string name="vehicle_type">Loại xe :</string>
+	<string name="tax">Giá :</string>
+	<string name="order">ĐẶT XE</string>
+</resources>

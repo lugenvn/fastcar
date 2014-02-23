@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- main screen -->
+    <string name="app_name">FastCar</string>
+    <string name="action_settings">Settings</string>
+	<string name="infor_text">Thông tin lộ trình</string>
+	<string name="from">Từ :</string>
+	<string name="to">Đến :</string>
+	<string name="vehicle_type">Loại xe :</string>
+	<string name="tax">Giá :</string>
+	<string name="order">ĐẶT XE</string>
+	<string name="accept">XÁC NHẬN</string>
+	<string name="notification_1">Xe đã đến xin quý khách xác nhận</string>
+	<string name="notification_2">Mời quý khách đặt xe</string>
+	
+	<!-- signin screen -->
+	<string name="not_fill_enought">xin nhập đúng thông tin !</string>
+	<string name="loading">Loading…</string>
+	<string name="username">Tên đăng nhập : </string>
+	<string name="password">Mật khẩu : </string>
+	<string name="signin">Đăng nhập</string>
+	<string name="signup">Đăng kí</string>
+	
+	<!-- img description -->
+	
+	<string name="des_logo">logo</string>
+	
+	<!-- popup order -->
+	
+	<string name="from_string_null">Cần nhập địa chỉ của bạn</string>
+	<string name="to_string_null">Cần nhập địa chỉ đến</string>
+</resources>
