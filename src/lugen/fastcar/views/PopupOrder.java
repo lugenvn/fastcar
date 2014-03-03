@@ -86,6 +86,9 @@ public class PopupOrder extends PopupWindow implements OnClickListener, IDelegat
 
 	@Override
 	public void onGetSuccess(AbstractTask task) {
+		if (dialog != null && dialog.isShowing()) {
+			dialog.dismiss();
+		}
 		if (task instanceof GetAddressByLatLonTask) {
 			String address = task.getResult();
 			edtFrom.setText(address);
@@ -100,16 +103,13 @@ public class PopupOrder extends PopupWindow implements OnClickListener, IDelegat
 			order.lat = LoginObject.get_instance().getLat();
 			order.lon = LoginObject.get_instance().getLon();
 			order.id = LoginObject.get_instance().getUserId();
-			order.type = "5";
-			order.allocation = "4";
-			order.price = String.valueOf(dis*10000);
+			order.type = "1";
+			order.allocation = "5";
+			order.price = String.valueOf(100000);
 			new OrderTask(this, order).execute();
 		} else if (task instanceof OrderTask) {
 			String s = task.getResult();
 			Log.d(Log.TAG, "order return : " + s);
-		}
-		if (dialog != null && dialog.isShowing()) {
-			dialog.dismiss();
 		}
 	}
 
